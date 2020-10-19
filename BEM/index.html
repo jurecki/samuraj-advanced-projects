@@ -5,26 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel='stylesheet' href="='style.css'">
+    <link rel='stylesheet' href="./style.css">
 </head>
 
-<body>
-    <nav class='menu'>
+<body class='page'>
+    <header class='banner page__header'>
+        <h1 class='banner_title banner_title--large'>Slogan duzy</h1>
+        <h2 class='banner_title banner_title--medium'>Slogan maly</h2>
+        <button class='btn banner__btn'>Wejdź</button>
+    </header>
+    <nav class='menu page__menu'>
         <div class='menu__logo'>
-            <img class='menu__logo-image' src="" alt="">
-            <span class='menu__logo-name'>Cube Ltd.</span>
+            <img class='menu__logo-image' src='#'>
+            <span class='menu_logo-name'>Nazwa firmy</span>
         </div>
-        <ul class='menu__item-list'>
+        <ul class='menu__items'>
             <li class='menu__item'>
-                <a class='menu__link' href=""><img class='menu__icon' src="" alt="">link-1
-                </a>
-            </li>
-            <li class='menu__item'><a class='menu__link' href=""><img class='menu__icon' src="" alt="">link-2</a></li>
-            <li class='menu__item'><a class='menu__link' href=""><img class='menu__icon' src="" alt="">link-3</a></li>
-            <li class='menu__item'><a class='menu__link' href=""><img class='menu__icon' src="" alt="">link-4</a></li>
-            <li class='menu__item'><a class='menu__link' href=""><img class='menu__icon' src="" alt="">link-5</a></li>
+                <a class='menu__link' href="">
+                    File
+                </a></li>
+            <li class='menu__item menu__item--disable'>
+                <a class='menu__link' href="">
+                    Edit
+                </a></li>
+            <li class='menu__item'>
+                <a class='menu__link' href="">
+                    View
+                </a></li>
+            <li class='menu__item'><a class='menu__link' href="">
+                    Help
+                </a></li>
         </ul>
     </nav>
+
+    <section class='articles page__articles'>
+        <form action='/' class='search'>
+            <input class='search__input' type='text'>
+            <button class='btn search__btn' type='submit'>Szukaj</button>
+        </form>
+        <article class='article'>
+            <h1 class='article__title'>Tytuł artykułu</h1>
+            <div class='article__info'>
+                <span class='article__publication-date'>Data publikacji: 20.07.2020</span>
+                <span class='article__author'>Autor: Jan Nowak</span>
+            </div>
+            <p class='article__text'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis officia dolor nam adipisci sapiente?
+                Dignissimos ex sint quibusdam ducimus recusandae, praesentium, voluptate laborum, id atque porro officia
+                soluta nesciunt excepturi.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et omnis, facilis, molestias rem sunt impedit
+                consequuntur quam esse ullam beatae rerum, voluptatem vel autem adipisci corrupti ex. Nihil, ullam
+                adipisci.
+            </p>
+            <h2 class='article__subtitle'>Subtytuł</h1>
+                <p class='article__text'>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta laborum eum dignissimos odit
+                    tempora.
+                    Officia sed recusandae similique earum, aliquid ad laborum, minus, quis laudantium reiciendis fugiat
+                    architecto ipsa velit.
+                </p>
+                <button class='btn article__btn'>Czytaj dalej...</button>
+        </article>
+    </section>
+    <footer class='footer page__footer'>
+        <p class='footer__copywright-info'>Copyright</p>
+        <p class='footer__copywright-adress'>Adres.... </p>
+    </footer>
 </body>
 
 </html>
