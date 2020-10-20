@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  background-color: lightgray;
+  border: 2px solid gray;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form__title {
+  font-size: 1rem;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  margin: 20px;
+  font-family: 'Arial';
+}
+
+.form__input {
+  margin: 5px 0;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  height: 30px;
+  font-family: 'Arial';
+  padding-left: 10px;
+  color: black;
+  font-size: 0.7rem;
+  border: none;
+}
+
+.form__button {
+  display: block;
+  padding: 4px 8px;
+  margin: 20px 0;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  text-transform: uppercase;
+  border: 1px solid black;
+  font-size: 0.7rem;
+}
+
+.result, .content, .footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.result {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.result__info {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 20px 0;
+}
+
+.result__element {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+.content {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content__info {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin: 20px 0;
+}
+/*# sourceMappingURL=style.css.map */

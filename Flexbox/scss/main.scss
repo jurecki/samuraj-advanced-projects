@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300&display=swap');
 
-$main-color: #cadetblue;
+$main-color: cadetblue;
 $default-font: arial;
 $special-font: 'pt sans',
 'roboto';
@@ -20,6 +20,7 @@ $special-font: 'pt sans',
     margin: 0 auto;
     align-content: flex-start;
     box-shadow: 0 0 4px 0 black;
+
 }
 
 html {
@@ -35,6 +36,8 @@ html {
         width: 100%;
         display: block;
     }
+
+ 
 }
 
 .search {
@@ -47,6 +50,7 @@ html {
         flex-basis: 60%;
         height: 50%;
         max-height: 60px;
+        min-height: 50px;
         margin-right: 10px;
         padding: 0 10px;
         font-size: 1.4rem;
@@ -61,6 +65,7 @@ html {
         flex-basis: 30%;
         height: 50%;
         max-height: 60px;
+        min-height: 50px;
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -71,6 +76,11 @@ html {
             background-color: black;
             color: white;
         }
+    }
+    @media (max-width: 799px) {
+        flex-basis: 100%;
+        order: -1;
+        margin: 20px 
     }
 }
 
@@ -90,6 +100,11 @@ html {
         &:hover {
             color: gray;
         }
+    }
+
+    @media (max-width: 799px) {
+        flex-grow: 1;
+        justify-content: flex-end;
     }
 }
 
@@ -164,13 +179,18 @@ html {
 
     .article {
         flex-basis: 50%;
+        @media (max-width: 799px) {
+            flex-basis: 100%;
+        }
     }
 }
 
 .article {
     padding: 20px 50px;
     text-align:center;
-
+    &--small {
+        padding: 10px 30px;
+    }
     &__image {
         display: block;
         width: 100%;
@@ -180,6 +200,13 @@ html {
         font-family: $special-font;
         font-size: 2rem;
         padding: 35px 0 15px;
+
+        .article--small &  {
+            padding: 10px 0 5px;
+            font-size: 1.6rem;
+            background-color: $main-color;
+        }
+
     }
     &__introduction {
         line-height: 1.6;
@@ -208,13 +235,54 @@ html {
 }
 
 .articles-list {
-    background-color: blue;
     flex-basis: 100%;
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .article {
+        flex-basis: 30%;
+        // flex-grow: 1;
+        @media (max-width: 1023px) {
+            flex-basis: 45%;
+        }
+        @media (max-width: 799px) {
+            flex-basis: 90%;
+        }
+    }   
+}
 
 .footer {
-    background-color: gray;
+    background-color: $main-color;
     flex-basis: 100%;
- 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+    &__item {
+        flex-basis: 30%;
+    }
 }
+
+
+.sm-links {
+    color:white;
+    margin: 20px 0;
+    font-family: $special-font;
+    text-align: center;
+    &--darken {
+        background-color: darken($main-color, 20%);
+    }
+
+    &__title {
+        margin: 20px 0;
+        font-size: 3rem;
+        font-weight: 400;
+
+    }
+
+    &__item {
+        text-indent: 40px;
+        font-size: 1.7rem;
+        line-height: 1.5;
+    }
 }
