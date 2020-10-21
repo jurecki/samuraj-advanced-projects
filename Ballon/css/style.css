@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ballon-animation {
+  position: relative;
+  background-color: lightblue;
+  height: 100vh;
+}
+
+.ballon-animation .cloud {
+  position: absolute;
+  width: 20%;
+}
+
+.ballon-animation .cloud:nth-child(1) {
+  left: 20%;
+  top: 30%;
+}
+
+.ballon-animation .cloud:nth-child(2) {
+  left: 24%;
+  top: 5%;
+}
+
+.ballon-animation .cloud:nth-child(3) {
+  left: 33%;
+  top: 55%;
+  z-index: 1;
+}
+
+.ballon-animation .cloud:nth-child(4) {
+  left: 60%;
+}
+
+.ballon-animation .cloud:nth-child(5) {
+  left: 25%;
+  top: 50%;
+}
+
+.ballon-animation .cloud:nth-child(6) {
+  left: 60%;
+  top: 20%;
+  z-index: 1;
+}
+
+.ballon-animation .ballon {
+  position: absolute;
+  top: 20%;
+  width: 15%;
+  left: 50%;
+}
+/*# sourceMappingURL=style.css.map */
