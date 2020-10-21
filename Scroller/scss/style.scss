@@ -1,17 +1,3 @@
-* {
-    box-sizing: border-box;
-}
+@import 'scroller';
+@import 'base';
 
-html {
-    overflow: hidden;
-}
-
-section {
-    height: 100vh;
-    text-align: center;
-
-    p {
-        max-width: 75%;
-        margin: 16px auto
-    }
-}

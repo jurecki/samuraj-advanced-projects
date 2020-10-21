@@ -1,3 +1,34 @@
+.scroller__navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.scroller__navigation ul {
+  list-style: none;
+}
+
+.scroller__navigation ul li + li {
+  margin-top: 10px;
+}
+
+.scroller__navigation li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 255, 0.6);
+}
+
+.scroller__navigation li:hover {
+  cursor: pointer;
+}
+
+.scroller__navigation li.active {
+  background-color: red;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -1,0 +1,29 @@
+.scroller__navigation {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+
+
+    ul {
+        list-style: none;
+
+        li + li {
+            margin-top: 10px;
+        }
+    }
+
+    li {
+        width:10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(0,0,255,0.6);
+
+        &:hover {
+            cursor: pointer;
+        }
+        &.active {
+           background-color: red; 
+        }
+    } 
+}
