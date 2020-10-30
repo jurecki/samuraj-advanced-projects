@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+@import "variables";
+
+html,body {
+    font-size: $base-font-size;
+    font-family: 'Montserrat', sans-serif;
+    color: $text-color
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin: $main-spacing;
+}
+
+p {
+    margin-bottom: $main-spacing;
+}
