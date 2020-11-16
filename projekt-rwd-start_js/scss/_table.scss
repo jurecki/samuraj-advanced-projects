@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+}
+
+thead {
+    border-bottom: 2px solid daken($color-primary,20%);
+    color: #ffff;
+    background-color: $color-primary;
+}
+
+tr {
+    border-bottom: 1px solid #dddd;
+}
+
+th,td {
+    padding: $main-spacing/2;
+}

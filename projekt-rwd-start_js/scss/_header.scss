@@ -1,0 +1,21 @@
+.header {
+    background-color: $color-primary;
+    color: #ffff;
+    padding: $main-spacing 0;
+    margin-bottom: $main-spacing;
+
+    &__content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: $main-spacing/2;
+        width: $main-spacing*2;
+    }
+
+    &__title {
+
+    }
+}
